@@ -1,1 +1,1 @@
-# vanilla-todo
+# todo-app

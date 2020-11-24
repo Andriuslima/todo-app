@@ -142,6 +142,8 @@ function addTodo(e) {
 function deleteTodoByIndex(index) {
   if (index === 'um') {
     index = 1
+  } else if (index === 'dois') {
+    index = 2
   }
   console.log("Removing todo with index: " + index)
   const todo = todoList.children.item(index-1)
@@ -175,7 +177,10 @@ function deleteTodo(e) {
 function completeTodoByIndex(index) {
   if (index === 'um') {
     index = 1
+  } else if (index === 'dois') {
+    index = 2
   }
+
   console.log("Completing todo with index: " + index)
   const todo = todoList.children.item(index-1)
   todo.classList.toggle("completed");
